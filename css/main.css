@@ -71,10 +71,15 @@ body {
 }
 
 .nav__list {
+  z-index: 7;
   max-width: 462px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+}
+
+.nav__signup {
+  z-index: 7;
 }
 
 .nav__list-link,
