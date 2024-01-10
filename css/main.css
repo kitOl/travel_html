@@ -6,6 +6,8 @@
   --container-width: 1270px;
   --container-padding: 15px;
   --secondary-text: rgba(15, 31, 28, 0.5);
+  --orange: #ff7c4e;
+
   --left-padding: calc(
     (var(--layout-width) - var(--container-width)) / 2 +
       var(--container-padding)
@@ -27,8 +29,9 @@ body {
 .header,
 .destinations,
 .customers,
-.cta {
-  display: none;
+.cta,
+.subscribe {
+  /* display: none; */
 }
 
 .container {
@@ -87,6 +90,14 @@ body {
   line-height: normal;
 }
 
+.nav__logo a {
+  color: inherit !important;
+}
+
+.logo--footer {
+  color: var(--orange);
+}
+
 .nav__list {
   z-index: 7;
   max-width: 462px;
@@ -95,8 +106,7 @@ body {
   justify-content: space-between;
 }
 
-.nav__signup {
-  z-index: 7;
+.nav__list--footer {
 }
 
 .nav__list-link,
@@ -130,8 +140,24 @@ body {
   border-radius: 50px;
 }
 
-.nav__signup-link + .nav__signup-btn {
-  margin-left: 25px;
+.nav__list.nav__list--footer a.active::after,
+.nav__list.nav__list--footer a:hover::after {
+  display: none;
+}
+
+.nav__list.nav__list--footer a.active,
+.nav__list.nav__list--footer a:hover,
+.nav__signup-link.nav__signup--footer:hover {
+  color: var(--orange);
+}
+
+.nav__signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 7;
+
+  column-gap: 25px;
 }
 
 .nav__signup-btn {
@@ -564,4 +590,13 @@ body {
   text-align: center;
   font-size: 25px;
   font-weight: 600;
+}
+
+.footer {
+  padding: 56px 0 74px;
+}
+
+.nav__signup--footer,
+.nav__list--footer a {
+  color: var(--secondary-text);
 }
