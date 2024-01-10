@@ -26,12 +26,12 @@ body {
   background-color: rgba(186, 219, 124, 0.863);
 }
 
-.header,
-.destinations,
-.customers,
-.cta,
-.subscribe {
-  /* display: none; */
+.header-,
+.destinations-,
+.customers-,
+.cta-,
+.subscribe- {
+  display: none;
 }
 
 .container {
@@ -106,12 +106,8 @@ body {
   justify-content: space-between;
 }
 
-.nav__list--footer {
-}
-
 .nav__list-link,
-.nav__signup-link,
-.nav__signup-btn {
+.nav__signup-link {
   text-decoration: none;
   color: #fff;
   font-size: 15px;
@@ -160,20 +156,6 @@ body {
   column-gap: 25px;
 }
 
-.nav__signup-btn {
-  display: inline-block;
-  padding: 13px 44px;
-  border-radius: 100px;
-  background: linear-gradient(130deg, #ff7b4e 15.57%, #ff584e 95.03%), #fff;
-}
-
-.header__content {
-  /* position: relative; */
-  /* display: flex; */
-  /* flex-direction: row-reverse; */
-  /* justify-content: flex-end; */
-}
-
 .header__badge {
   display: inline-block;
   color: #fff;
@@ -186,22 +168,6 @@ body {
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.25);
   margin-bottom: 7px;
-}
-
-.nav__signup-btn:hover,
-.content-btn:hover,
-.destinations__btn:hover,
-.btn:hover {
-  color: rgb(240, 243, 125);
-  transition: color 0.2s ease-in;
-}
-
-.nav__signup-btn:active,
-.content-btn:active,
-.destinations__btn:active,
-.btn:active {
-  position: relative;
-  top: 1px;
 }
 
 .header__content-explore {
@@ -228,20 +194,6 @@ body {
   font-weight: 700;
   line-height: normal;
   margin-bottom: 68px;
-}
-
-.content-btn {
-  display: inline-block;
-  text-decoration: none;
-  color: #fefefe;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-
-  padding: 26px 47px;
-  border-radius: 27px;
-  background: linear-gradient(130deg, #ff7b4e 15.57%, #ff584e 95.03%);
 }
 
 .header__photo {
@@ -319,18 +271,6 @@ body {
   font-weight: 500;
   line-height: normal;
   margin-bottom: 60px;
-}
-
-.destinations__btn {
-  padding: 25px 45px;
-  border-radius: 27px;
-  background: linear-gradient(130deg, #ff7b4e 15.57%, #ff584e 95.03%);
-
-  color: #fefefe;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
 }
 
 .destinations__slider {
@@ -524,20 +464,6 @@ body {
   margin-bottom: 60px;
 }
 
-.btn {
-  display: inline-block;
-  padding: 25px 44px;
-  color: #fff;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  z-index: 3;
-
-  border-radius: 27px;
-  background: linear-gradient(130deg, #ff7b4e 15.57%, #ff584e 95.03%);
-}
-
 .subscribe {
   padding: 35px 0 50px;
 }
@@ -581,15 +507,10 @@ body {
   color: var(--secondary-text);
 }
 
-.subscribe__form-button {
+.btn--subscribe {
   padding: 33px 87px;
   border-radius: 35px;
-  background: linear-gradient(130deg, #ff7b4e 15.57%, #ff584e 95.03%), #fff;
-
-  color: #fff;
-  text-align: center;
   font-size: 25px;
-  font-weight: 600;
 }
 
 .footer {
@@ -599,4 +520,47 @@ body {
 .nav__signup--footer,
 .nav__list--footer a {
   color: var(--secondary-text);
+}
+
+.btn {
+  display: inline-block;
+  padding: 25px 44px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  z-index: 3;
+
+  border-radius: 27px;
+  background: linear-gradient(130deg, #ff7b4e 15.57%, #ff584e 95.03%);
+}
+
+.btn:hover {
+  color: rgb(240, 243, 125);
+  transition: color 0.2s ease-in;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.btn--header {
+  color: #fefefe;
+  padding: 26px 47px;
+  font-size: 25px;
+}
+
+.btn--destinations {
+  color: #fefefe;
+}
+
+.btn--cta {
+  padding: 25px 55px;
+}
+
+.btn--signup {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 13px 44px;
+  border-radius: 100px;
 }
