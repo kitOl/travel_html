@@ -26,7 +26,8 @@ body {
 
 .header,
 .destinations,
-.customers {
+.customers,
+.cta {
   /* display: none; */
 }
 
@@ -163,14 +164,16 @@ body {
 
 .nav__signup-btn:hover,
 .content-btn:hover,
-.destinations__btn:hover {
+.destinations__btn:hover,
+.btn:hover {
   color: rgb(240, 243, 125);
   transition: color 0.2s ease-in;
 }
 
 .nav__signup-btn:active,
 .content-btn:active,
-.destinations__btn:active {
+.destinations__btn:active,
+.btn:active {
   position: relative;
   top: 1px;
 }
@@ -363,7 +366,7 @@ body {
 }
 
 .customers {
-  padding: 100px 0 117px;
+  padding: 100px 0 133px;
 }
 .customers__row {
   display: flex;
@@ -394,23 +397,13 @@ body {
 }
 
 .avatar {
-  display: block;
-  position: relative;
-  margin-right: 40px;
-}
-
-.avatar::before {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: -1;
-  content: "";
-  display: block;
+  overflow: hidden;
   width: 134px;
   height: 134px;
-  border-radius: 71.5px;
-  background: #fa9;
+  border-radius: 50%;
+  background-color: #fa9;
+  position: relative;
+  margin-right: 40px;
 }
 
 .user__wrapper {
@@ -444,5 +437,77 @@ body {
   margin-bottom: 30px;
 }
 
-.user__rating {
+.cta {
+  padding: 100px 0;
+}
+
+.cta__plate {
+  padding: 40px 15px;
+  position: relative;
+  width: 100%;
+
+  border-radius: 60px;
+  background: #fff;
+  text-align: center;
+}
+
+.cta__plate::before,
+.cta__plate::after {
+  position: absolute;
+  width: 63px;
+  height: 83px;
+  content: "";
+  z-index: 1;
+}
+
+.cta__plate::before {
+  right: 74px;
+  top: 74px;
+
+  background-image: url(../img/cta/cta-el-01.svg);
+}
+
+.cta__plate::after {
+  left: 74px;
+  bottom: 74px;
+
+  background-image: url(../img/cta/cta-el-02.svg);
+}
+
+.cta__plate-content {
+  min-height: 581px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+}
+
+.cta__title {
+  max-width: 520px;
+  color: #0f1f1c;
+  font-size: 45px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.cta-text {
+  color: #0f1f1c;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 25px 44px;
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  z-index: 3;
+
+  border-radius: 27px;
+  background: linear-gradient(130deg, #ff7b4e 15.57%, #ff584e 95.03%);
 }
