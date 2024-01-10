@@ -2,9 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
+  --layout-width: 1440px;
   --container-width: 1270px;
   --container-padding: 15px;
   --secondary-text: rgba(15, 31, 28, 0.5);
+  --left-padding: calc(
+    (var(--layout-width) - var(--container-width)) / 2 +
+      var(--container-padding)
+  );
 }
 
 body {
@@ -19,10 +24,11 @@ body {
   background-color: rgba(186, 219, 124, 0.863);
 }
 
-/* .header,
-.destinations {
-  display: none;
-} */
+.header,
+.destinations,
+.customers {
+  /* display: none; */
+}
 
 .container {
   max-width: var(--container-width);
@@ -32,14 +38,14 @@ body {
 
 .container-right {
   /* position: absolute; */
-  padding-left: calc(
-    (100% - var(--container-width)) / 2 + var(--container-padding)
-  );
+  width: calc(var(--layout-width) - var(--left-padding));
+
+  /* padding-left: var(--left-padding); */
 }
 
 .header {
   position: relative;
-  max-width: 1440px;
+  max-width: var(--layout-width);
   min-height: 940px;
   margin: 0 auto;
   padding-top: 44px;
@@ -59,10 +65,10 @@ body {
   width: 100%;
   height: 96px;
 
-  background-image: url(/img/header/header-bottom.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url(../img/header/header-bottom.svg);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .nav__row {
@@ -85,7 +91,7 @@ body {
   max-width: 462px;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .nav__signup {
@@ -187,7 +193,7 @@ body {
 
 .content-text {
   max-width: 519px;
-  color: var(--secondary-text);
+  color: rgba(255, 255, 255, 0.507);
   font-size: 25px;
   font-style: normal;
   font-weight: 700;
@@ -213,13 +219,40 @@ body {
   display: block;
   position: absolute;
   right: 0;
-  bottom: 0px;
+  top: -18px;
+  /* bottom: 18px; */
   width: 898px;
-  height: 100%;
+  height: 1123px;
+  flex-shrink: 0;
+}
+
+.header__photo-element1 {
+  position: absolute;
+  left: 150px;
+  top: 191px;
+}
+
+.header__photo-element2 {
+  position: absolute;
+  left: 641px;
+  top: 254px;
+}
+
+.header__photo-element3 {
+  position: absolute;
+  left: 14px;
+  top: 769px;
+}
+
+.header__photo-element4 {
+  position: absolute;
+
+  left: 774px;
+  top: 718px;
 }
 
 .destinations {
-  padding: 96px 100px;
+  padding: 96px 0;
 }
 
 .destination-row {
@@ -250,6 +283,7 @@ body {
 }
 
 .destinations__text {
+  width: 456px;
   color: var(--secondary-text);
   font-size: 25px;
   font-style: normal;
@@ -326,4 +360,89 @@ body {
   right: -27px;
   justify-content: flex-end;
   padding-right: 26px;
+}
+
+.customers {
+  padding: 100px 0 117px;
+}
+.customers__row {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  column-gap: 68px;
+}
+.customers__img img {
+  display: block;
+  border-radius: 50px;
+}
+.customers__content {
+  max-width: 565px;
+}
+
+.content__title {
+  color: #0f1f1c;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 35px;
+}
+.customers__info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 37px;
+}
+
+.avatar {
+  display: block;
+  position: relative;
+  margin-right: 40px;
+}
+
+.avatar::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+  content: "";
+  display: block;
+  width: 134px;
+  height: 134px;
+  border-radius: 71.5px;
+  background: #fa9;
+}
+
+.user__wrapper {
+  padding-top: 18px;
+}
+
+.user__name {
+  color: #0f1f1c;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.user__location {
+  color: var(--secondary-text);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.user__comment {
+  max-width: 491px;
+  color: var(--secondary-text);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+
+.user__rating {
 }
