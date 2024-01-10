@@ -28,7 +28,7 @@ body {
 .destinations,
 .customers,
 .cta {
-  /* display: none; */
+  display: none;
 }
 
 .container {
@@ -510,4 +510,58 @@ body {
 
   border-radius: 27px;
   background: linear-gradient(130deg, #ff7b4e 15.57%, #ff584e 95.03%);
+}
+
+.subscribe {
+  padding: 35px 0 50px;
+}
+
+.subscribe__content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* text-align: center; */
+  max-width: 800px;
+}
+
+.subscribe__title {
+  max-width: 494px;
+  color: #0f1f1c;
+  text-align: center;
+  font-size: 55px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.subscribe__form {
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-between;
+  padding: 12px;
+  min-width: 800px;
+
+  border-radius: 35px;
+  background: linear-gradient(0deg, #fff 0%, #fff 100%), #c4c4c4;
+}
+
+.subscribe__form-input {
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 30px;
+}
+
+.subscribe__form-input::placeholder {
+  color: var(--secondary-text);
+}
+
+.subscribe__form-button {
+  padding: 33px 87px;
+  border-radius: 35px;
+  background: linear-gradient(130deg, #ff7b4e 15.57%, #ff584e 95.03%), #fff;
+
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
 }
