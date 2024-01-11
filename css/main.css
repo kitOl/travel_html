@@ -99,7 +99,6 @@ body {
 }
 
 .nav__list {
-  z-index: 7;
   max-width: 462px;
   width: 100%;
   display: flex;
@@ -151,7 +150,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 7;
 
   column-gap: 25px;
 }
@@ -205,31 +203,15 @@ body {
   width: 898px;
   height: 1123px;
   flex-shrink: 0;
+
+  pointer-events: none;
 }
 
-.header__photo-element1 {
-  position: absolute;
-  left: 150px;
-  top: 191px;
-}
-
-.header__photo-element2 {
-  position: absolute;
-  left: 641px;
-  top: 254px;
-}
-
-.header__photo-element3 {
+.header__photo::after {
+  content: url(../img/header/header-elements.svg);
   position: absolute;
   left: 14px;
-  top: 769px;
-}
-
-.header__photo-element4 {
-  position: absolute;
-
-  left: 774px;
-  top: 718px;
+  top: 191px;
 }
 
 .destinations {
