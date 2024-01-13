@@ -26,27 +26,34 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="nav">
-          <div class="nav__row">
-            <h2 class="nav__logo">GoTrip</h2>
+        <div class="nav__row">
+          <nav class="nav">
+            <a href="./index.html" class="nav__logo">GoTrip</a>
             <div class="nav__list">
-              <a href="#" class="nav__list-link active">Home</a>
-              <a href="#" class="nav__list-link">Sevices</a>
-              <a href="#" class="nav__list-link">Pricing</a>
-              <a href="#" class="nav__list-link">Contact</a>
+              <a href="#" class="active">Home</a>
+              <a href="#">Sevices</a>
+              <a href="#">Pricing</a>
+              <a href="#">Contact</a>
             </div>
             <div class="nav__signup">
               <a href="#" class="nav__signup-link">Sign up</a>
               <a href="#" class="btn btn--signup">Login</a>
             </div>
-          </div>
-        </nav>
-        <div class="header__content">
+            <div class="nav__toggle">
+              <button type="button" class="nav__toggle-btn">
+                <div class="menu-icon-wrapper">
+                  <div class="menu-icon"></div>
+                </div>
+              </button>
+            </div>
+          </nav>
+        </div>
+        <div class="header__content-row">
           <div class="header__photo">
             <img src="./img/header/header-bg.png" alt="Photo" />
           </div>
 
-          <div class="header__content-explore">
+          <div class="header__content">
             <div class="header__badge">explore the world</div>
             <h1 class="content-title">
               Explore The Natural Beauty Of Halmahera With Us
@@ -63,50 +70,36 @@
 
     <main>
       <section class="destinations">
-        <div class="container">
-          <div class="container-right">
-            <div class="destination-row">
-              <div class="destinations__content">
-                <h2 class="destinations__title">
-                  <span>Choice Of</span>
-                  Destinations
-                </h2>
+        <div class="container-right">
+          <div class="destination-row">
+            <div class="destinations__content">
+              <h2 class="destinations__title">
+                <span>Choice Of</span>
+                Destinations
+              </h2>
 
-                <div class="destinations__text">
-                  <p>
-                    explore the beauty of god's earth in a beautiful forest and
-                    have fun
-                  </p>
-                </div>
-
-                <a href="#!" class="btn btn--destinations">Explore Now</a>
+              <div class="destinations__text">
+                <p>
+                  explore the beauty of god's earth in a beautiful forest and
+                  have fun
+                </p>
               </div>
-              <div class="destinations__slider">
-                <div class="slider">
-                  <div class="owl-carousel">
-                    <img
-                      class="slider__item"
-                      src="./img/slider/01.jpg"
-                      alt=""
-                    />
-                    <img
-                      class="slider__item"
-                      src="./img/slider/02.jpg"
-                      alt=""
-                    />
-                    <img
-                      class="slider__item"
-                      src="./img/slider/03.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <button class="slider__btn slider__btn--prev">
-                    <img src="img/slider/arrow-left.svg" alt="Slide left" />
-                  </button>
-                  <button class="slider__btn slider__btn--next">
-                    <img src="img/slider/arrow-right.svg" alt="Slide right" />
-                  </button>
+
+              <a href="#!" class="btn btn--destinations">Explore Now</a>
+            </div>
+            <div class="destinations__slider">
+              <div class="slider">
+                <div class="owl-carousel">
+                  <img class="slider__item" src="./img/slider/01.jpg" alt="" />
+                  <img class="slider__item" src="./img/slider/02.jpg" alt="" />
+                  <img class="slider__item" src="./img/slider/03.jpg" alt="" />
                 </div>
+                <button class="slider__btn slider__btn--prev">
+                  <img src="img/slider/arrow-left.svg" alt="Slide left" />
+                </button>
+                <button class="slider__btn slider__btn--next">
+                  <img src="img/slider/arrow-right.svg" alt="Slide right" />
+                </button>
               </div>
             </div>
           </div>
@@ -181,14 +174,14 @@
 
     <footer class="footer">
       <div class="container">
-        <nav class="nav">
-          <div class="nav__row">
+        <div class="nav__row">
+          <nav class="nav">
             <a href="./index.html" class="nav__logo logo--footer">GoTrip</a>
             <div class="nav__list nav__list--footer">
-              <a href="#" class="nav__list-link active">Home</a>
-              <a href="#" class="nav__list-link">Sevices</a>
-              <a href="#" class="nav__list-link">Pricing</a>
-              <a href="#" class="nav__list-link">Contact</a>
+              <a href="#" class="active">Home</a>
+              <a href="#" class="">Sevices</a>
+              <a href="#" class="">Pricing</a>
+              <a href="#" class="">Contact</a>
             </div>
             <div class="nav__signup">
               <a href="#" class="nav__signup-link nav__signup--footer"
@@ -196,8 +189,8 @@
               >
               <a href="#" class="btn btn--signup">Login</a>
             </div>
-          </div>
-        </nav>
+          </nav>
+        </div>
       </div>
     </footer>
 
