@@ -6,11 +6,30 @@
 
 const owl = $(".owl-carousel");
 owl.owlCarousel({
-  center: true,
-  loop: true,
-  margin: 30,
+  // mergeFit: false,
   startPosition: 1,
+
+  loop: true,
+  center: true,
+  autoWidth: true,
   items: 3,
+  margin: 33,
+
+  responsive: {
+    0: {
+      items: 1,
+      margin: 10,
+    },
+    800: {
+      items: 3,
+      margin: 15,
+    },
+    1000: {
+      martin: 30,
+    },
+  },
+  // stagePadding: 35,
+  // autoplay: true,
 });
 
 // Go to the previous item
