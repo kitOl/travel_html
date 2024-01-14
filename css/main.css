@@ -34,8 +34,8 @@ body {
 
 .header,
 .destinations,
-.customers-,
-.cta,
+.customers,
+.cta-,
 .subscribe,
 .footer {
   display: none;
@@ -780,8 +780,24 @@ body {
     left: -159px;
     top: 27px;
   }
-}
 
+  .cta {
+    padding: 50px 0;
+  }
+
+  .cta__plate-content {
+    min-height: 390px;
+  }
+
+  .cta__title {
+    font-size: 40px;
+  }
+
+  .cta-text {
+    font-size: 26px;
+    margin-bottom: 45px;
+  }
+}
 @media (max-width: 680px) {
   .header {
     min-height: unset;
@@ -952,5 +968,35 @@ body {
 
   .user__rating {
     max-width: 200px;
+  }
+
+  .cta {
+    padding: 20px 0;
+  }
+
+  .cta__plate-content {
+    min-height: 290px;
+  }
+
+  .cta__title {
+    font-size: 30px;
+  }
+
+  .cta-text {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  .btn {
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 3;
+
+    border-radius: 27px;
+  }
+
+  .btn--cta {
+    padding: 15px 40px;
+    border-radius: 15px;
   }
 }
