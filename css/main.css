@@ -510,9 +510,20 @@ body {
 }
 
 .btn--subscribe {
+  width: fit-content;
+  text-align: center;
+  /* display: inline-block; */
+
   padding: 33px 87px;
-  border-radius: 35px;
+
   font-size: 25px;
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  border-radius: 35px;
+
+  background: linear-gradient(130deg, #ff7b4e 15.57%, #ff584e 95.03%), #fff;
 }
 
 .footer {
@@ -823,9 +834,37 @@ body {
   }
 
   .nav__list--footer {
-    max-width: 300px;
+    max-width: 360px;
+  }
+
+  .nav__list--footer,
+  .nav__signup--footer {
+    /* max-width: unset; */
+    flex-direction: row;
+    row-gap: 20px;
   }
 }
+
+@media (max-width: 800px) {
+  .nav--footer {
+    align-items: flex-start;
+  }
+
+  .nav__list--footer,
+  .nav__signup--footer {
+    max-width: unset;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .btn__signup--footer {
+    padding: 6px 20px;
+    border-radius: 15px;
+  }
+}
+
 @media (max-width: 680px) {
   .header {
     min-height: unset;
@@ -910,6 +949,11 @@ body {
     max-width: 250px;
   }
 
+  .btn--cta {
+    padding: 20px 50px;
+    border-radius: 20px;
+  }
+
   .subscribe {
     padding: 25px 0 30px;
   }
@@ -926,6 +970,7 @@ body {
   .subscribe__form {
     min-width: 320px;
     flex-direction: column;
+    align-items: center;
     row-gap: 15px;
   }
 
@@ -936,27 +981,9 @@ body {
   }
 
   .btn--subscribe {
-    padding: 15px 47px;
+    padding: 18px 57px;
     border-radius: 15px;
     font-size: 20px;
-  }
-
-  .nav--footer {
-    align-items: flex-start;
-  }
-
-  .nav__list--footer,
-  .nav__signup--footer {
-    max-width: unset;
-    flex-direction: column;
-    row-gap: 20px;
-    justify-content: start;
-    align-items: center;
-  }
-
-  .btn__signup--footer {
-    padding: 6px 20px;
-    border-radius: 15px;
   }
 }
 
@@ -1111,7 +1138,7 @@ body {
   }
 
   .btn--subscribe {
-    max-width: 100%;
+    /* max-width: 100%; */
     padding: 12px 30px;
     font-size: 18px;
     border-radius: 15px;

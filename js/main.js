@@ -25,7 +25,7 @@ owl.owlCarousel({
       margin: 15,
     },
     1000: {
-      martin: 30,
+      margin: 30,
     },
   },
   // stagePadding: 35,
