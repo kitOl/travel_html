@@ -36,8 +36,8 @@ body {
 .destinations,
 .customers,
 .cta,
-.subscribe-,
-.footer {
+.subscribe,
+.footer- {
   display: none;
 }
 
@@ -660,8 +660,8 @@ body {
 }
 
 @media (max-width: 1025px) {
-  .nav__list,
-  .nav__signup {
+  .nav__list--header,
+  .nav__signup--header {
     display: none;
   }
 
@@ -699,7 +699,7 @@ body {
   }
 
   .nav--mobile .nav__list a,
-  .nav__signup-link {
+  .nav__signup-link.nav__list--header {
     font-size: 22px;
   }
 
@@ -821,6 +821,10 @@ body {
     font-size: 26px;
     margin-bottom: 45px;
   }
+
+  .nav__list--footer {
+    max-width: 300px;
+  }
 }
 @media (max-width: 680px) {
   .header {
@@ -936,6 +940,24 @@ body {
     border-radius: 15px;
     font-size: 20px;
   }
+
+  .nav--footer {
+    align-items: flex-start;
+  }
+
+  .nav__list--footer,
+  .nav__signup--footer {
+    max-width: unset;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .btn__signup--footer {
+    padding: 6px 20px;
+    border-radius: 15px;
+  }
 }
 
 @media (max-width: 520px) {
@@ -1042,7 +1064,7 @@ body {
     margin-bottom: 25px;
   }
 
-  .btn {
+  .btn--header {
     font-size: 20px;
     font-weight: 600;
     z-index: 3;
