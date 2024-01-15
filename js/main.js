@@ -7,24 +7,25 @@
 const owl = $(".owl-carousel");
 owl.owlCarousel({
   // mergeFit: false,
-  startPosition: 1,
-
-  loop: true,
   center: true,
-  autoWidth: true,
-  items: 3,
-  margin: 33,
+  loop: true,
+  margin: 20,
+  startPosition: 1,
+  // autoWidth: true,
+  items: 1,
 
   responsive: {
-    0: {
-      items: 1,
-      margin: 10,
-    },
-    800: {
+    450: {
+      autoWidth: true,
       items: 3,
-      margin: 15,
+    },
+    700: {
+      autoWidth: true,
+      items: 3,
     },
     1000: {
+      autoWidth: true,
+      items: 3,
       margin: 30,
     },
   },
