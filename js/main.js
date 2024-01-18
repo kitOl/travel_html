@@ -16,15 +16,15 @@ owl.owlCarousel({
 
   responsive: {
     450: {
-      autoWidth: true,
-      items: 3,
+      // autoWidth: true,
+      items: 2,
     },
-    700: {
-      autoWidth: true,
-      items: 3,
+    800: {
+      // autoWidth: true,
+      items: 2,
     },
     1000: {
-      autoWidth: true,
+      // autoWidth: true,
       items: 3,
       margin: 30,
     },
